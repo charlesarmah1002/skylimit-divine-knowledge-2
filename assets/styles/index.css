@@ -1,0 +1,164 @@
+@import url("main.css");
+
+section#hero {
+    background: var(--blue);
+}
+
+section#hero .container{
+    height: 500px;
+    position: relative;
+    padding: 0;
+}
+
+section#hero .container .hero-image-container {
+    width: min(550px, 100%);
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+section#hero .container .hero-image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #19567540 50%, transparent);
+    z-index: 2;
+}
+
+section#hero .container .hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section#hero .container .hero-text {
+    width: min(600px, 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    background: linear-gradient(to right, #19567580 95%, transparent);
+    padding: 0 10px;
+}
+
+section#hero .container .hero-text h1 {
+    font-size: 50px;
+    line-height: 52px;
+    text-align: left;
+    font-weight: 600;
+}
+
+section#hero .container .hero-text h3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+section#hero .container .hero-text .btn {
+    height: 35px;
+    width: 120px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+
+
+section#services {
+    margin: 30px 0;
+}
+
+section#services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    flex-wrap: wrap;
+    gap: 15px;
+    color: var(--blue);
+}
+
+section#services .container .service {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+section#services .container .service .icon {
+    width: 100px;
+    height: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#services .container .service .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+section#about .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+section#about .container .image-container img {
+    width: 100%;
+}
+
+section#about .container .context {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section#about .container .context h2 {
+    padding: 0 0 0 10px;
+    position: relative;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+section#about .container .context h2::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+}
+
+section#about .container .context h2 span {
+    font-size: 35px;
+    line-height: 47px;
+}
