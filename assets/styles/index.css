@@ -162,3 +162,140 @@ section#about .container .context h2 span {
     font-size: 35px;
     line-height: 47px;
 }
+
+section#about .container .context ul {
+    list-style: none;
+}
+
+section#about .container .context ul li a {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5px;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+section#about .container .context ul li a span:first-child {
+    font-size: 20px;
+}
+
+section#about .container .context ul li a:hover span:last-child {
+    text-decoration: underline;
+}
+
+
+
+section#map {
+    margin-top: 30px;
+}
+
+section#map .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 !important;
+}
+
+
+section#form .container {
+    margin-top: 30px;
+}
+
+section#form .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+section#form .container .image-container img {
+    width: 100%;
+}
+
+section#form .container .form-container {
+    width: min(400px, 100%);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#form .container .form-container form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+section#form .container .form-container form input,
+section#form .container .form-container form select{
+    width: 100%;
+    height: 35px;
+    padding: 0 0 0 10px;
+    font-family: poppins, sans-serif;
+}
+
+
+
+footer {
+    background: var(--blue);
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+    color: white;
+    padding: 10px;
+}
+
+footer .container {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+footer .container .col:first-child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+footer .container .col .image-container {
+    height: 100px;
+}
+
+footer .container .col .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+footer .container .col ul {
+    list-style: none;
+}
+
+footer .container .col ul li h5 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+}
+
+footer .container .col ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    width: 100%;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+footer .container .col ul li a:hover span {
+    text-decoration: underline;
+}
