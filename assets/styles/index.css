@@ -212,7 +212,7 @@ section#form .container .image-container img {
 }
 
 section#form .container .form-container {
-    width: min(400px, 100%);
+    width: min(450px, 100%);
     height: 100%;
     margin: auto;
     display: flex;
@@ -224,7 +224,13 @@ section#form .container .form-container form{
     width: 100%;
     display: grid;
     grid-template-columns: auto;
-    gap: 10px;
+    gap: 5px;
+}
+
+section#form .container .form-container form h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 section#form .container .form-container form input,
@@ -235,67 +241,18 @@ section#form .container .form-container form select{
     font-family: poppins, sans-serif;
 }
 
-
-
-footer {
-    background: var(--blue);
-    color: white;
-    margin-top: 20px;
+section#form .container .form-container form button {
+    width: 120px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 20px;
+    border-radius: 50px;
+    background: green;
+    border: none;
+    justify-content: covenant;
+    font-family: poppins, sans-serif;
     color: white;
-    padding: 10px;
-}
-
-footer .container {
-    max-width: var(--max-width);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-footer .container .col:first-child {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-footer .container .col .image-container {
-    height: 100px;
-}
-
-footer .container .col .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-footer .container .col ul {
-    list-style: none;
-}
-
-footer .container .col ul li h5 {
-    font-size: 25px;
+    margin: auto;
     font-weight: 500;
-    margin: 0;
-}
-
-footer .container .col ul li a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: 0.3s;
-    width: 100%;
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-footer .container .col ul li a:hover span {
-    text-decoration: underline;
 }
