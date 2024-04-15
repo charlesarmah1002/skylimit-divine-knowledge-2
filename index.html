@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="primary-navigation" id="primary-navigation">
-            <a href="" class="logo">
+            <a href="./" class="logo">
                 <img src="assets/images/logo-blue.png" alt="Skylimit Divine Knowledge">
             </a>
 
@@ -23,10 +23,10 @@
             </div>
 
             <ul class="menu">
-                <li><a href="">Home</a></li>
+                <li><a href="./">Home</a></li>
                 <li><a href="">Registration</a></li>
                 <li><a href="">Study Abroad</a></li>
-                <li><a href="">Contract</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="">About</a></li>
             </ul>
         </nav>
@@ -168,15 +168,20 @@
                     <div class="form-container">
                         <form action="">
                             <h3>Study Abroad Application</h3>
-                            <input type="text" name="fname" id="fname" placeholder="First Name">
-                            <input type="text" name="sname" id="sname" placeholder="Surname">
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                            <input type="text" name="surname" id="surname" placeholder="Last Name">
                             <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="number" name="phone" id="phone" placeholder="Mobile Number">
-                            <select name="pref-country" id="pref-country">
-                                <option value="">Preferred Country</option>
+                            <input type="text" name="phone_number" id="phone_number" placeholder="Phone Number">
+                            <select name="pref-prog" id="">
+                                <option value="">Select interested programs</option>
+                                <option value="">Under Graduate Programmes</option>
+                                <option value="">Post Graduate Programmes</option>
                             </select>
-                            <select name="pref-country-2" id="pref-country-2">
-                                <option value="">Preferred Country 2</option>
+                            <select name="pref-country1" id="countries1">
+                                <option value="">Preferred country</option>
+                            </select>
+                            <select name="pref-country2" id="countries2">
+                                <option value="">Preferred country 2</option>
                             </select>
                             <button>Submit</button>
                         </form>
@@ -209,6 +214,7 @@
 
     <!-- scripts -->
     <script src="assets/scripts/menu.js"></script>
+    <script src="assets/scripts/countries.js"></script>
 </body>
 
 </html>
