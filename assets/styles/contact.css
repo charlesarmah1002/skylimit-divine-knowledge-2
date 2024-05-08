@@ -33,6 +33,13 @@ section#info .container .data {
     box-shadow: 1px 1px 6px #70707040;
 }
 
+section#info .container .data p {
+    width: 100%;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
 section#info .container .data:hover {
     background: var(--blue);
     color: white;
@@ -99,19 +106,49 @@ section#request .container .form-container {
 }
 
 section#request .container .form-container form {
-    width: min(450px, 100%);
-    background: #ffffff80;
-    backdrop-filter: blur(30px);
-    height: 300px;
+    width: min(500px, 100%);
+    background: #ffffff70;
+    backdrop-filter: blur(15px);
+    min-height: 200px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
     border-radius: 5px;
+    margin: 15px;
+    gap: 6px;
 }
 
-section#request .container .form-container form > input {
-    width: 100%;
-    
+section#request .container .form-container form input{
+    height: 40px;
+    padding: 0 0 0 5px;
+    /* font-family: poppins, sans-serif; */
+    font-family: montserrat;
+}
+
+section#request .container .form-container form input#fname {
+    flex: 1 0 130px;
+}
+
+section#request .container .form-container form input#sname {
+    flex: 1 0 130px;
+}
+
+section#request .container .form-container form input#email {
+    flex: 1 0 100%;
+}
+
+section#request .container .form-container form h3 {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+section#request .container .form-container form button {
+    flex: 1 0 120px;
+    height: 35px;
+    font-family: montserrat, sans-serif;
+    background: var(--blue);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
 }
